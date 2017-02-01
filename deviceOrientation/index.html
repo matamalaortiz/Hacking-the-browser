@@ -100,7 +100,7 @@ if (!window.DeviceOrientationEvent) {
       document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
 
 
-      if (event.acceleration.z > 2){
+      if (event.acceleration.z > 8){
         document.body.style.backgroundColor = "white";
         document.getElementById('falling').innerHTML = 'THE WORLD IS SPINNING';
         document.getElementById('imagen').classList.remove('hidden');
