@@ -1,0 +1,17 @@
+{
+  "name": "15 segs",
+  "manifest_version": 2,
+  "browser_action": {
+  "default_title": "15 segs"
+},
+  "version": "0.1",
+  "background": {
+    "scripts": ["jquery.js", "background.js"],
+    "persistent":false
+  },
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "<all_urls>"
+  ]
+}
