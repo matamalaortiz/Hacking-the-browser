@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="jquery.js"></script>
+  <title>GoodBye Facebook</title>
+  <style>
+  p {
+    position: absolute;
+    z-index: -1;
+    margin-left: 45%;
+    margin-top: 25%;
+    color: #4267b2;
+    font-family: Helvetica;
+  }
+  .container {
+      text-align: center;
+
+  }
+img {
+  width: 0vw;
+  -webkit-animation: fade 15s ; /* Safari 4.0 - 8.0 */
+ animation: fade 15s ;
+}
+
+@keyframes fade{
+    0%   {width: 100vw; transform: rotate(360deg);}
+    1%   {width: 100vw; transform: rotate(362deg); margin-top: -1%;}
+    2%   {width: 100vw; transform: rotate(358deg);}
+    3%   {width: 100vw; transform: rotate(362deg);margin-top: -1%;}
+    4%   {width: 100vw; transform: rotate(358deg);}
+    20% {transform: rotate(360deg)}
+    55% {transform: rotate(280deg)}
+    100% {width: 0vw; margin-top: 25%; transform: rotate(0deg)}
+}
+  </style>
+</head>
+
+<body>
+  <p><b>Goodbye Facebook</b></p>
+
+  <div class="container">
+    <img src="fb.png" alt="">
+  </div>
+<script>
+$(function() {
+  $("p").css("display","none");
+  $("p").fadeIn("slow");
+
+});
+</script>
+</body>
+</html>
